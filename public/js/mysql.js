@@ -1,14 +1,3 @@
-// const seeMoreBtns = document.querySelectorAll('.see-more'),
-//         popover     = document.querySelector('.popover');
-
-//         function buildPopover(beerdata, el){
-//             popover.querySelector('.ipa-rating').textContent = `IPA Rating: ${beerdata.IpaRating}`;
-//             popover.querySelector('.ratings').textContent = `Average Rating: ${beerdata.ratings}`;
-//             popover.querySelector('.beer-description').textContent = beerdata.description;
-
-//             popover.classList.add('show-popover');
-//             el.appendChild(popover);
-//             }
 
 //         function fetchData(){
 //             let targetEl = this,
@@ -25,5 +14,3 @@
 //             })
 //             .catch((err) => console.log(err));
 //         }
-
-//     seeMoreBtns.forEach(btn => btn.addEventListener('click', fetchData));

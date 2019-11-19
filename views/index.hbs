@@ -1,21 +1,83 @@
 <main class="pageHome">
-    {{!-- handlebars notes --}}
+    <section class="secAbout">
+        <h2 class="hidden">About</h2>
+        <div class="strengths">
+            <h3>Strengths</h3>
+            <div class="strength s1">
+                <object data="images/icons/speed.svg" type="image/svg+xml"></object>
+                <h4>Speed</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+            </div>
+            
+            <div class="strength s2">
+                <object data="images/icons/debugging.svg" type="image/svg+xml"></object>
+                <h4>Debugging</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+            </div>
 
+            <div class="strength s3">
+                <object data="images/icons/creativity.svg" type="image/svg+xml"></object>
+                <h4>Creativity</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+            </div>
+        </div>
 
-    {{#each data}}
-        {{name}}
-        {{text}}
+        {{!-- maybe add this? --}}
+        {{!-- <div class="stats">
+            <h3>Game Stats</h3>
+            <div class="stat design">
+                <object data="images/icons/desStats.svg" type="image/svg+xml"></object>
+            </div>
 
+            <div class="stat frontend">
+                <object data="images/icons/frontStats.svg" type="image/svg+xml"></object>
+            </div>
 
-        {{#if list1}}    {{!-- if list1 exists, display list 1 --}}
-            {{#each list1}}
-                {{this}} {{!--or {{{this}}} to interperate html  --}}
-            {{/each}}
+            <div class="stat backend">
+                <object data="images/icons/frontStats.svg" type="image/svg+xml"></object>
+            </div>
+        </div> --}}
+    </section>
 
-            {{else}}
-            {{#each list1}}
-                {{this}} {{!--or {{{this}}} to interperate html  --}}
-            {{/each}}
-        {{/if}}
-    {{/each}}
+    <section class="secPortfolio">
+        <h2 class="hidden">Portfolio</h2>
+        <nav class="portfolioNav">
+            <ul class="portfolioList">
+                <li>Port Item</li>
+                <li>Port Item</li>
+                <li>Port Item</li>
+                <li>Port Item</li>
+            </ul>
+        </nav>
+
+        {{!-- use hbs each view here! --}}
+        <div class="projView">
+            <div class="projInfo">
+                <h3 class="projTitle">Project X</h3>
+                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
+                    <div class="projMockups"></div>
+                    <div class="appsUsed">
+                        <label class="app"></label>
+                        <label class="app"></label>
+                        <label class="app"></label>
+                        <label class="app"></label>
+                    </div>
+            </div>
+            <div class="projImages">
+                {{!-- add image carossel here --}}
+            </div>
+        </div>
+    </section>
+
+    <div class="secContact">
+        <form action="submit" method="post">
+            <input type="text" placeholder="Name" id='name'>
+            <input type="email" name="email" id='email' placeholder="Email">
+            <input id='subject' name='subject' type="text" placeholder='Subject'>
+            <textarea id='message' name='message'></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </main>
+

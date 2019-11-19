@@ -10,6 +10,18 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+/* GET about page. */
+router.get('/about', function(req, res, next) {
+  res.render('about', {pageTitle: ' - About'});
+});
+
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', {pageTitle: ' - Contact'});
+});
+
+
+/* GET portfolio data FROM database. */
 // router.get('/svgData/:target', (req,res)=>{
 //   let query = `SELECT * FROM stats WHERE id="${req.params.target}"`
 

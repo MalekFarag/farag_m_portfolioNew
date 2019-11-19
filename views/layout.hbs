@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    {{!-- css link --}}
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <title>Portfolio</title>
+    {{!-- font-awesome link --}}
+    <script src="https://kit.fontawesome.com/066bb77ccc.js" crossorigin="anonymous"></script>
+
+    <title>Malek Farag{{pageTitle}}</title>
 </head>
 <body>
+    <h1 class="hidden">Malek Farag's Portfolio Site</h1>
+
+    {{!-- landing section --}}
+    {{!-- <canvas class="landing">
+        <h2 class="landingTitle">
+            Hello,<br>
+            I'm <span>Malek Farag</span>, full-stack web developper</h2>
+        <div class="viewWork">
+            <label>My Work</label> <object data="images/icons/arrow.svg" type="image/svg+xml" class="landingArrow"></object>
+        </div>
+    </canvas> --}}
+
     <header class="mainHeader">
-        <div class="mainLogo"></div>
-        <nav class="headNav">
+        <object data="images/logo/logo.svg" type="image/svg+xml" class="logo"></object>
+        <div class="burgerMenu">
+            <div class="bLine bl1"></div>
+            <div class="bLine bl2"></div>
+            <div class="bLine bl3"></div>
+        </div>
+        <nav class="headNav hidden">
             <ul class="navList">
                     <li><a href="/">Home</a></li>
                     <li><a href="about">About</a></li>
@@ -42,6 +60,5 @@
     </footer>
 
     <script src="js/hamburgerMenu.js"></script>
-    <script src="js/pageTransition.js"></script>
 </body>
 </html>
