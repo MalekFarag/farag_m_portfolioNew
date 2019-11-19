@@ -1,0 +1,21 @@
+<main class="pageHome">
+    {{!-- handlebars notes --}}
+
+
+    {{#each data}}
+        {{name}}
+        {{text}}
+
+
+        {{#if list1}}    {{!-- if list1 exists, display list 1 --}}
+            {{#each list1}}
+                {{this}} {{!--or {{{this}}} to interperate html  --}}
+            {{/each}}
+
+            {{else}}
+            {{#each list1}}
+                {{this}} {{!--or {{{this}}} to interperate html  --}}
+            {{/each}}
+        {{/if}}
+    {{/each}}
+</main>
