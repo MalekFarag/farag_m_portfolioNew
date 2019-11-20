@@ -1,0 +1,74 @@
+// portfolio sec
+
+.secPortfolio{
+    padding-top: 100px;
+    .portfolioNav{
+        .projList{
+            @include flex-center(row);
+            justify-content: space-evenly;
+            li{
+                position: relative;
+
+                font-size: 22px;
+                border-bottom: solid 3px black;
+                padding: 8px;
+                cursor: pointer;
+
+                transition: all .18s ease;
+                &:hover{
+                    color: white;
+                    background-color: black;
+                    border-bottom: solid 3px white;
+
+                    bottom: 2px;
+                }
+            }
+        }
+    }
+
+    .projView{
+        margin-top: 50px;
+        @include flex-center(row);
+        align-items: flex-start;
+        justify-content: space-evenly;
+        text-align: left;
+        .projInfo{
+            width: 60%;
+            .projTitle{
+                font-size: $head-sizeM;
+            }
+            .projDesc{
+                margin-top: 30px;
+                font-size: $para-sizeM;
+                letter-spacing: 1px;
+            }
+            .projMockups{
+                margin-top: 10px;
+                height: 200px;
+                background-color: black;
+            }
+            .appsUsed{
+                margin-top: 10px;
+                @include flex-center(row);
+                justify-content: space-evenly;
+                .app{
+                    font-size: $para-sizeM;
+                    color: white;
+                    background-color: black;
+                    padding: 6px 8px;
+                    border-radius: 30%;
+
+                    transition: all .18s ease;
+                    &:hover{
+                        background-color: royalblue;
+                    }
+                }
+            }
+        }
+        .projImages{
+            width: 33%;
+            height: 500px;
+            background-color: black;
+        }
+    }
+}

@@ -12,8 +12,24 @@ main{
     margin: 0 auto; 
     min-height: 90%;
 }
+section{
+    margin: 0 auto;
+    width: 97%; // for mobile only
+    text-align: center;
+}
 
 //vars
-
+    //mobile
+    $head-sizeM: 32px;
+    $sub-head-sizeM: 28px;
+    $para-sizeM: 18px;
 
 //mixins
+
+@mixin flex-center ($dir){
+    display: flex;
+    flex-direction: $dir;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

@@ -1,5 +1,19 @@
 //about page
 
-// .secAbout{
-    
-// }
+.secAbout{
+    .strengths{
+        @include flex-center(column);
+        
+        .strength{
+            margin-top: 100px;
+            h4{
+                margin-top: 20px;
+                font-size: $sub-head-sizeM;
+            }
+            p{
+                margin-top: 20px;
+                font-size: $para-sizeM;
+            }
+        }
+    }
+}

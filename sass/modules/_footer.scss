@@ -1,1 +1,35 @@
 //footer
+
+.mainFooter{
+    @include flex-center(row);
+    justify-content: space-evenly;
+
+    margin: 80px 0px;
+
+    .social{
+        @include flex-center(row);
+        justify-content: space-evenly;
+        .fab{
+            color: black;
+            margin: 20px;
+            font-size: $para-sizeM;
+            cursor: pointer;
+        }
+    }
+
+    .footNav{
+        .navList{
+            @include flex-center(row);
+            justify-content: space-evenly;
+            li{
+                margin: 10px;
+                font-size: $para-sizeM;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+   
