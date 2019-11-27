@@ -10,11 +10,15 @@ const nav        = document.querySelector('.headNav'),
 
 //Toggle show nav
     //change color of logo + burger
-
     function toggleNav(){
+        console.log('Nav toggled.');
         nav.classList.toggle('showNav');
         burgerIcon.classList.toggle('moveB');
-        //logo.classList.toggle('colorChange');
+
+        logo.querySelector('.st0').classList.toggle('white');
+		logo.querySelector('.st1').classList.toggle('white');
+
+
         line1.classList.toggle('colorChange');
         line1.classList.toggle('rotate1');
 
@@ -41,3 +45,40 @@ const nav        = document.querySelector('.headNav'),
 
 
 //scroll-to section
+
+    function scroll(){
+        //remove Nav
+        nav.classList.remove('showNav');
+        burgerIcon.classList.remove('moveB');
+
+        logo.querySelector('.st0').classList.remove('white');
+		logo.querySelector('.st1').classList.remove('white');
+
+
+        line1.classList.remove('colorChange');
+        line1.classList.remove('rotate1');
+
+        line2.classList.remove('hide');
+
+        line3.classList.remove('colorChange');
+        line3.classList.remove('rotate3');
+
+        navItems.forEach( item =>{
+            item.classList.remove('showItem');
+        })
+
+
+        //scroll to
+        let x = '.sec'+this.id;
+        let target = document.querySelector(x);
+        console.log(target);
+
+        target.scrollIntoView({
+            behavior: "smooth", 
+            block: "start", 
+            inline: "center"})
+    }
+    
+    document.querySelectorAll('.scroll').forEach(link => {
+        link.addEventListener('click', scroll);
+    })

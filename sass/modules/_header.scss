@@ -1,13 +1,19 @@
 //header
 
 .mainHeader{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
     height: 50px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 
+    background-color: rgba(255,255,255, 1) !important;
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
 
     .logoDiv{
@@ -18,13 +24,14 @@
         cursor: pointer;
         .logo{
             height: 100%;
+            z-index: inherit;
         }
     }
 
     .burgerMenu{
         position: relative;
         z-index: 2;
-        transition: all .3s ease .3s;
+        transition: all .25s ease .25s;
         cursor: pointer;
         .bLine{
             height: 3px;
@@ -63,30 +70,28 @@
     }
 
     .headNav{
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
         width: 100%;
         padding-bottom: 250px;
 
-        background: linear-gradient(to bottom, rgba(0,0,0,1) 40%,rgba(0,0,0,.6) 100%);
+        background: linear-gradient(to bottom, rgba(0,0,0,.9) 10%,rgba(0,0,0,.1) 100%);
         clip-path: circle(0px at 50% -10%);
         transition: all 1s ease;
 
         .navList{
             text-align: center;
-            a{
-                color: white;
-                text-decoration: none;
-            }
-
+            position: relative;
+            z-index: 1;
             .navItem{
                 font-size: 40px;
                 margin-top: 100px;
                 margin-bottom: 100px;
                 transform: translateY(0px);
                 opacity: 0;
+                cursor: pointer;
+                color: white;
             }
 
             .navItem:nth-child(1){
@@ -110,5 +115,6 @@
     }
     .showNav{
         clip-path: circle(100% at 50% -5%);
+        pointer-events: all;
     }
 }

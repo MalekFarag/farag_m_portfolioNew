@@ -1,14 +1,13 @@
 // portfolio sec
-
 .secPortfolio{
     padding-top: 100px;
+    padding-bottom: 300px;
+    background-color: white;
     .portfolioNav{
         .projList{
             @include flex-center(row);
             justify-content: space-evenly;
             li{
-                position: relative;
-
                 font-size: 22px;
                 border-bottom: solid 3px black;
                 padding: 8px;

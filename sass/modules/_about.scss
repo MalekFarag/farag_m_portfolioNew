@@ -1,6 +1,7 @@
 //about page
 
 .secAbout{
+    background-color: white;
     .strengths{
         @include flex-center(column);
         

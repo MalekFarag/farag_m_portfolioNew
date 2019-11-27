@@ -15,17 +15,22 @@
     <h1 class="hidden">Malek Farag's Portfolio Site</h1>
 
     {{!-- landing section --}}
-    {{!-- <canvas class="landing">
-        <h2 class="landingTitle">
-            Hello,<br>
-            I'm <span>Malek Farag</span>, full-stack web developper</h2>
-        <div class="viewWork">
-            <label>My Work</label> <object data="images/icons/arrow.svg" type="image/svg+xml" class="landingArrow"></object>
+    <div class="landing secHome">
+        <div class="landingInfo">
+            <h2 class="landingTitle">
+                Hello,<br>
+                I'm <span>Malek Farag</span>, front-end web developper</h2>
+            <div class="viewWork scroll" id='Portfolio'>
+                <label>View My Work</label> <object data="images/icons/arrow.svg" type="image/svg+xml" class="landingArrow"></object>
+            </div>
         </div>
-    </canvas> --}}
+        
+    </div>
 
     <header class="mainHeader">
-        <a class="logoDiv" href="/"><object data="images/logo/logoS.svg" type="image/svg+xml" class="logo"></object></a>
+        <a class="logoDiv" href="/">
+        <svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.25 247.25" style="enable-background:new 0 0 240.25 247.25;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}.st1{fill:none;stroke:#000000;stroke-width:19;stroke-miterlimit:10;}.line{ transition: .25s all ease .25s;}.white{stroke: #ffffff;}</style><g id="_x32_"><polyline class="st0 line" points="51.25,190 51.25,31.63 124.59,114.24 	"/><polyline class="st1 line" points="202.75,227 202.75,35 19.75,225.5 	"></g></svg>                      
+        </a>
         <div class="burgerMenu">
             <div class="bLine bl1"></div>
             <div class="bLine bl2"></div>
@@ -33,10 +38,10 @@
         </div>
         <nav class="headNav">
             <ul class="navList">
-                    <li class="navItem"><a href="/">Home</a></li>
-                    <li class="navItem"><a href="about">About</a></li>
-                    <li class="navItem"><a href="portfolio">Portfolio</a></li>
-                    <li class="navItem"><a href="contact">Contact</a></li>
+                    <li class="navItem scroll" id='Home'>Home</li>
+                    <li class="navItem scroll" id='About'>About</li>
+                    <li class="navItem scroll" id='Portfolio'>Portfolio</li>
+                    <li class="navItem scroll" id='Contact'>Contact</li>
             </ul>
         </nav>
     </header>
@@ -51,10 +56,10 @@
         </div>
         <nav class="footNav">
             <ul class="navList">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="scroll" id='Home'>Home</li>
+                <li class="scroll" id='About'>About</li>
+                <li class="scroll" id='Portfolio'>Portfolio</li>
+                <li class="scroll" id='Contact'>Contact</li>
             </ul>
         </nav>
     </footer>
