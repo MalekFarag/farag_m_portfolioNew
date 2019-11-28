@@ -12,6 +12,7 @@
         @include flex-center(row);
         justify-content: space-evenly;
         .fab{
+            color: white;
             margin: 20px;
             font-size: $para-sizeM;
             cursor: pointer;

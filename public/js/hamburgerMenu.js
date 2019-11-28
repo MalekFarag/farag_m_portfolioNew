@@ -32,13 +32,6 @@ const nav        = document.querySelector('.headNav'),
         })
     }
 
-    // window.addEventListener('scroll', function(){
-    //     var y = window.scrollY;
-    //     if(nav.classList.contains('showNav')){
-    //         window.scrollTo(y);
-    //     }
-    // })
-
     burgerIcon.addEventListener('click', toggleNav);
 
 

@@ -10,15 +10,11 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-/* GET about page. */
-router.get('/about', function(req, res, next) {
-  res.render('about', {pageTitle: ' - About'});
+/* GET submit page. */
+router.get('/submit', function(req, res, next) {
+  res.render('submit', {pageTitle: ' - Success!', layout: false});
 });
 
-/* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact', {pageTitle: ' - Contact'});
-});
 
 
 /* GET portfolio data FROM database. */
