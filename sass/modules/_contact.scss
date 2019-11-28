@@ -1,7 +1,7 @@
 //contact section
 
 .secContact{
-    padding-top: 50px;
+    padding-top: 60px;
     background-color: $background-color;
     width: 100%;
 
@@ -9,7 +9,7 @@
         text-align: center;
         font-size: $head-sizeM;
         color: white;
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
     form{
         @include flex-center(column);
@@ -43,10 +43,13 @@
             font-size: bold;
             margin-top: 30px;
             border: solid 2px white;
-            border-radius: 5%;
+            border-radius: 3%;
             padding: 10px 25px;
+            transition: all .2s ease;
+            cursor: pointer;
             &:hover, &:focus{
                 background: rgba(255, 255, 255, 1);
+                color: rgb(48, 190, 186);
             }
         }
     }

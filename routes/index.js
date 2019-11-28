@@ -11,9 +11,9 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET submit page. */
-router.get('/submit', function(req, res, next) {
-  res.render('submit', {pageTitle: ' - Success!', layout: false});
-});
+// router.get('/submit', function(req, res, next) {
+//   res.render('submit', {pageTitle: ' - Success!', layout: false});
+// });
 
 
 

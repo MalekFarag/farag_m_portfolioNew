@@ -14,13 +14,17 @@
         .fab{
             color: white;
             margin: 20px;
+            padding: 6px;
             font-size: $para-sizeM;
+            transform: scale(1.05, 1.05);
+            border-radius: 3%;
             cursor: pointer;
 
             transition: all .2s ease;
 
             &:hover{
-                color: royalblue;
+                background: white;
+                color: #28BFBE;
             }
         }
     }
@@ -31,12 +35,17 @@
             @include flex-center(row);
             justify-content: space-evenly;
             li{
-                margin: 10px;
+                margin: 8px;
+                padding: 6px;
                 font-size: $para-sizeM; 
+                text-transform: lowercase;
+                transform: scale(1.05, 1.05);
+                border-radius: 3%;
                 cursor: pointer;
                 transition: all .2s ease;
                 &:hover{
-                    color: royalblue;
+                    background: white;
+                    color: #28BFBE;
                 }
             }
         }

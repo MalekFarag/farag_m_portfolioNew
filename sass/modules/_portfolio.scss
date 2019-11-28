@@ -1,8 +1,7 @@
 // portfolio sec
 .secPortfolio{
-
+    background: $main-background-color;
     padding-bottom: 100px;
-    background-color: white;
     .portfolioNav{
         .projList{
             @include flex-center(row);

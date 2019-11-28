@@ -2,7 +2,7 @@
 
 .secAbout{
     padding-bottom: 150px;
-    background-color: white;
+    background: $main-background-color;
     .strengths{
         @include flex-center(column);
         

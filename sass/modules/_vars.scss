@@ -4,7 +4,8 @@
     $sub-head-sizeM: 28px;
     $para-sizeM: 18px;
 
-    $background-color: linear-gradient(0deg, rgb(34,193,195) 0%, rgb(253, 139, 45) 100%);
+    $background-color: linear-gradient(0deg, rgb(34,193,195) 0%, rgb(228, 29, 62) 95%);
+    $main-background-color: white;
 
 
 
@@ -15,9 +16,10 @@
 }
 
 body{
-    width: 100%;
-    font-family: Helvetica, sans-serif;
+    width: 100%; 
+    font-family: 'Montserrat', sans-serif;
     background: $background-color;
+    overflow-x: hidden;
 }
 
 main{
