@@ -7,7 +7,7 @@ const 	element = document.querySelector('.landingInfo'),
             var moveX = (e.pageX * -1 / 60 + 16);
             var moveY = (e.pageY * -1 / 60 + 5);
 
-            parent.style.transform = "translateX(" + moveX  + '%) ' + "translateY(" + + moveY + "%)";
+            parent.style.transform = "translateX(" + moveX  + '%) ' + "translateY(" + moveY + "%)";
 
             }else{
                 parent.style.transform = "translateX(0) translateY(0)";
@@ -18,9 +18,19 @@ const 	element = document.querySelector('.landingInfo'),
     var waypoint = new Waypoint({
     element: document.querySelector('.mainHeader'),
     handler: function(direction) {
-        parent.style.transform = "translateX(0) translateY(0)";
+        parent.style.transform = "translateX(0px) translateY(0px)";
     }
   })
+
+
+  const arrow = document.querySelector('.arrow');
+
+  window.onload = function() {
+      console.log(arrow);
+      let tl = new TimelineMax({repeat: 999});
+      tl.to(arrow, 1, {bottom: '10px'});
+      tl.reverse();
+  };
 
 
 

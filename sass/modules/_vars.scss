@@ -4,7 +4,7 @@
     $sub-head-sizeM: 28px;
     $para-sizeM: 18px;
 
-    $background-color: linear-gradient(0deg, rgb(34,193,195) 0%, rgb(228, 29, 62) 95%);
+    $background-color: linear-gradient(0deg, rgb(34,193,195) 5%, rgb(228, 29, 62) 95%);
     $main-background-color: white;
 
 
@@ -42,10 +42,10 @@ section{
 // }
 
 .divide-bottom{
-    width: 125%;
+    width: 100%;
     height: 80px;
     background-color: white;
-    transform: translateY(-10px) translateX(-11%);
+    transform: translateY(-10px);
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
 }

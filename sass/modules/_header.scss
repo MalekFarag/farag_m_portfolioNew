@@ -18,6 +18,14 @@
 
     background: linear-gradient(to bottom, rgba(255,255,255, 1) 95%,rgba(255,255,255, 0) 100%);
 
+    .arrow{
+        position: absolute;
+        bottom: 100px;
+        height: 50px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
     .logoDiv{
         position: relative;
         z-index: 2;
