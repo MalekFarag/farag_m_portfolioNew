@@ -1,4 +1,3 @@
-// GSAP liscensed under GSAP's: "Standard 'No Charge' GreenSock License"
 const 	element = document.querySelector('.landingInfo'),
         parent  = element.parentElement;
 
@@ -23,14 +22,14 @@ const 	element = document.querySelector('.landingInfo'),
   })
 
 
-  const arrow = document.querySelector('.arrow');
+//   const arrow = document.querySelector('.arrow');
 
-  window.onload = function() {
-      console.log(arrow);
-      let tl = new TimelineMax({repeat: 999});
-      tl.to(arrow, 1, {bottom: '10px'});
-      tl.reverse();
-  };
+//   window.onload = function() {
+//       console.log(arrow);
+//       let tl = new TimelineMax({repeat: 999});
+//       tl.to(arrow, 1, {bottom: '10px'});
+//       tl.reverse();
+//   };
 
 
 

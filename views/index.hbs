@@ -35,71 +35,84 @@
         </nav>
 
         {{!-- use hbs each view here! --}}
-        <div class="projView">
+        {{!-- <div class="projView">
             <div class="projInfo proj1 view">
-                <h3 class="projTitle">Project 1</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{cordae.Name}}</h3>
+                    <p class="projDesc">{{cordae.Description}}</p>
+                    <img src="images/portfolio/{{cordae.Mockups}}" class="projMockups">
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        <label class="app">{{cordae.Apps-used[0]}}</label>
+                        <label class="app">{{cordae.Apps-used[1]}}</label>
+                        <label class="app">{{cordae.Apps-used[2]}}</label>
+                        <label class="app">{{cordae.Apps-used[3]}}</label>
+                        <label class="app">{{cordae.Apps-used[4]}}</label>
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                    <img src="images/portfolio/{{cordae.Images[0]}}" alt="cordae screenshot">
+                    <img src="images/portfolio/{{cordae.Images[1]}}" alt="cordae screenshot">
+                    <img src="images/portfolio/{{cordae.Images[2]}}" alt="cordae screenshot">
+                    <img src="images/portfolio/{{cordae.Images[3]}}" alt="cordae screenshot">
                     </div>
             </div>
             
             <div class="projInfo proj2">
-                <h3 class="projTitle">Project 2</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{hack.Name}}</h3>
+                    <p class="projDesc">{{hack.Description}}</p>
+                    <img src="images/portfolio/{{hack.Mockups}}" class="projMockups">
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        <label class="app">{{hack.Apps-used[0]}}</label>
+                        <label class="app">{{hack.Apps-used[1]}}</label>
+                        <label class="app">{{hack.Apps-used[2]}}</label>
+                        <label class="app">{{hack.Apps-used[3]}}</label>
+                        <label class="app">{{hack.Apps-used[4]}}</label>
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                    <img src="images/portfolio/{{hack.Images[0]}}" alt="hack screenshot">
+                    <img src="images/portfolio/{{hack.Images[1]}}" alt="hack screenshot">
+                    <img src="images/portfolio/{{hack.Images[2]}}" alt="hack screenshot">
+                    <img src="images/portfolio/{{hack.Images[3]}}" alt="hack screenshot">
                     </div>
             </div>
 
             <div class="projInfo proj3">
-                <div>
-                    <h3 class="projTitle">Project 3</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{cliff.Name}}</h3>
+                    <p class="projDesc">{{cliff.Description}}</p>
+                    <img src="images/portfolio/{{cliff.Mockups}}" class="projMockups">
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        <label class="app">{{cliff.Apps-used[0]}}</label>
+                        <label class="app">{{cliff.Apps-used[1]}}</label>
+                        <label class="app">{{cliff.Apps-used[2]}}</label>
+                        <label class="app">{{cliff.Apps-used[3]}}</label>
+                        <label class="app">{{cliff.Apps-used[4]}}</label>
                     </div>
-                </div>
-                
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                    <img src="images/portfolio/{{cliff.Images[0]}}" alt="cliff screenshot">
+                    <img src="images/portfolio/{{cliff.Images[1]}}" alt="cliff screenshot">
+                    <img src="images/portfolio/{{cliff.Images[2]}}" alt="cliff screenshot">
+                    <img src="images/portfolio/{{cliff.Images[3]}}" alt="cliff screenshot">
                     </div>
             </div>
 
             <div class="projInfo proj4">
-                <h3 class="projTitle">Project 4</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{fav.Name}}</h3>
+                    <p class="projDesc">{{fav.Description}}</p>
+                    <img src="images/portfolio/{{fav.Mockups}}" class="projMockups">
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        <label class="app">{{fav.Apps-used[0]}}</label>
+                        <label class="app">{{fav.Apps-used[1]}}</label>
+                        <label class="app">{{fav.Apps-used[2]}}</label>
+                        <label class="app">{{fav.Apps-used[3]}}</label>
+                        <label class="app">{{fav.Apps-used[4]}}</label>
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                    <img src="images/portfolio/{{fav.Images[0]}}" alt="fav screenshot">
+                    <img src="images/portfolio/{{fav.Images[1]}}" alt="fav screenshot">
+                    <img src="images/portfolio/{{fav.Images[2]}}" alt="fav screenshot">
+                    <img src="images/portfolio/{{fav.Images[3]}}" alt="fav screenshot">
                     </div>
             </div>
             
-        </div>
+        </div> --}}
     </section>
 </main>
 <div class="divide-bottom"></div>
