@@ -6,37 +6,21 @@
             <div class="strength s1">
                 <object data="images/icons/speed.svg" type="image/svg+xml"></object>
                 <h4>Speed</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+                <p>Lighting fast and efficient</p>
             </div>
             
             <div class="strength s2">
                 <object data="images/icons/debugging.svg" type="image/svg+xml"></object>
                 <h4>Debugging</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+                <p>Googling error codes is my secret passion! shh...</p>
             </div>
 
             <div class="strength s3">
                 <object data="images/icons/creativity.svg" type="image/svg+xml"></object>
                 <h4>Creativity</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, labore unde velit rerum.</p>
+                <p>As creative as they get</p>
             </div>
         </div>
-
-        {{!-- maybe add this? --}}
-        {{!-- <div class="stats">
-            <h3>Game Stats</h3>
-            <div class="stat design">
-                <object data="images/icons/desStats.svg" type="image/svg+xml"></object>
-            </div>
-
-            <div class="stat frontend">
-                <object data="images/icons/frontStats.svg" type="image/svg+xml"></object>
-            </div>
-
-            <div class="stat backend">
-                <object data="images/icons/frontStats.svg" type="image/svg+xml"></object>
-            </div>
-        </div> --}}
     </section>
 
     <section class="secPortfolio">
@@ -123,10 +107,10 @@
     <section class="secContact">
         <h2>Contact</h2>
         <form action="submit" method="post">
-            <input type="text" placeholder="Name" id='name'>
-            <input type="email" name="email" id='email' placeholder="Email">
-            <input id='subject' name='subject' type="text" placeholder='Subject'>
-            <textarea id='message' name='message' placeholder="Message"></textarea>
+            <input type="text" placeholder="Name" id='name' required>
+            <input type="email" name="email" id='email' placeholder="Email" required>
+            <input id='subject' name='subject' type="text" placeholder='Subject' required>
+            <textarea id='message' name='message' placeholder="Message" required></textarea>
 
             <button type="submit">send</button>
         </form>
