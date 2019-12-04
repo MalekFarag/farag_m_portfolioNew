@@ -1,6 +1,31 @@
 //Gallery Functions
 //lightbox
+const lightbox   = document.querySelector('.lightbox'),
+      lightImg   = document.querySelector('.lightImg'),
+      caption    = document.querySelector('.lightCap'),
+      clickables = document.querySelectorAll('.openBox'),
+      close      = document.querySelector('.close');
 
+      function openLightbox(){
+        targetImg = this.src.split('/images/')[1];
+        targetCaption = this.alt;
+
+        console.log('Image src + alt' + targetImg + targetCaption);
+        
+        lightbox.classList.remove('hidden');
+        caption.textContent = targetCaption;
+        lightImg.src = `images/${targetImg}`;
+      }
+
+      function closeLightbox(){
+        lightbox.classList.add('hidden');
+        console.log('closed lightbox');
+      }
+
+      clickables.forEach( box => box.addEventListener('click', openLightbox));
+      lightbox.addEventListener('click', closeLightbox);
+      close.addEventListener('click', closeLightbox);
+      
 
 
 
