@@ -14,13 +14,11 @@ router.get('/', function(req, res, next) {
       results[0].AppsUsed = results[0].AppsUsed.split(",").map(function(item) {
 
           return item;
-        });
+       });
       console.log('Database results: ' + results[0].AppsUsed);
     }
 
     // splits up by removing ','
-        
-        
         // results[0].Images.split(",").map(function(item) {
         //   return item;
         // });
