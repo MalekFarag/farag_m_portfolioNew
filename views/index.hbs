@@ -27,77 +27,96 @@
         <h2 class="hidden">Portfolio</h2>
         <nav class="portfolioNav">
             <ul class="projList">
-                <li class="pItem li1">Port Item</li>
-                <li class="pItem li2">Port Item</li>
-                <li class="pItem li3">Port Item</li>
-                <li class="pItem li4">Port Item</li>
+                <li class="pItem li1 active">Cordae Album Site</li>
+                <li class="pItem li2">Hackathon Build</li>
+                <li class="pItem li3">Cliff Creatives</li>
+                <li class="pItem li4">MySQL + HBS Build</li>
             </ul>
         </nav>
 
         {{!-- use hbs each view here! --}}
         <div class="projView">
             <div class="projInfo proj1 view">
-                <h3 class="projTitle">Project 1</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{cordae.Name}}</h3>
+                    <p class="projDesc">{{cordae.Description}}</p>
+                    <div class="parMocks">
+                        {{#each cordae.Mockups}}
+                            <img src="images/portfolio/{{this}}" alt="Cordae album review site mockup" class="projMockups openBox">
+                        {{/each}}
+                    </div>
+                    
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        {{#each cordae.AppsUsed}}
+                            <label class="app">{{this}}</label>
+                        {{/each}}
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                        {{#each cordae.Images}}
+                    <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cordae album review site screenshot">
+                        {{/each}}
                     </div>
             </div>
-            
+
             <div class="projInfo proj2">
-                <h3 class="projTitle">Project 2</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{hack.Name}}</h3>
+                    <p class="projDesc">{{hack.Description}}</p>
+                    <div class="parMocks">
+                        {{#each hack.Mockups}}
+                            <img src="images/portfolio/{{this}}" alt="Hackathon site mockup" class="projMockups openBox">
+                        {{/each}}
+                    </div>
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        {{#each hack.AppsUsed}}
+                            <label class="app">{{this}}</label>
+                        {{/each}}
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                        {{#each hack.Images}}
+                            <img src="images/portfolio/{{this}}" class="pImg openBox" alt="hackathon site screenshot">
+                        {{/each}}
                     </div>
             </div>
 
             <div class="projInfo proj3">
-                <div>
-                    <h3 class="projTitle">Project 3</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
-                    <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                <h3 class="projTitle">{{cliff.Name}}</h3>
+                    <p class="projDesc">{{cliff.Description}}</p>
+                    <div class="parMocks">
+                        {{#each cliff.Mockups}}
+                            <img src="images/portfolio/{{this}}" alt="Cliff creatives site mockup" class="projMockups openBox">
+                        {{/each}}
                     </div>
-                </div>
-                
+                    <div class="appsUsed">
+                        {{#each cliff.AppsUsed}}
+                            <label class="app">{{this}}</label>
+                        {{/each}}
+                    </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                        {{#each cliff.Images}}
+                            <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cliff creatives site screenshot">
+                        {{/each}}
                     </div>
             </div>
 
             <div class="projInfo proj4">
-                <h3 class="projTitle">Project 4</h3>
-                    <p class="projDesc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, rerum vero, dicta dolorum beatae incidunt corrupti ullam distinctio repudiandae quo nemo ipsam, ad aliquid sunt voluptas recusandae et placeat consequuntur.</p>
-                    <div class="projMockups"></div>
+                <h3 class="projTitle">{{fav.Name}}</h3>
+                    <p class="projDesc">{{fav.Description}}</p>
+                    <div class="parMocks">
+                        {{#each fav.Mockups}}
+                            <img src="images/portfolio/{{this}}" alt="Favorite things site mockup" class="projMockups openBox">
+                        {{/each}}
+                    </div>
                     <div class="appsUsed">
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
-                        <label class="app">app</label>
+                        {{#each fav.AppsUsed}}
+                            <label class="app">{{this}}</label>
+                        {{/each}}
                     </div>
                     <div class="projImages">
-                    {{!-- add image carossel here --}}
+                        {{#each fav.Images}}
+                    <img src="images/portfolio/{{this}}" class="pImg openBox" alt="fav screenshot">
+                        {{/each}}
                     </div>
             </div>
+            
             
         </div>
     </section>

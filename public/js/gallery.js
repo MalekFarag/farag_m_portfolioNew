@@ -7,14 +7,14 @@ const lightbox   = document.querySelector('.lightbox'),
       close      = document.querySelector('.close');
 
       function openLightbox(){
-        targetImg = this.src.split('/images/')[1];
+        targetImg = this.src.split('portfolio/')[1];
         targetCaption = this.alt;
 
         console.log('Image src + alt' + targetImg + targetCaption);
         
         lightbox.classList.remove('hidden');
         caption.textContent = targetCaption;
-        lightImg.src = `images/${targetImg}`;
+        lightImg.src = `images/portfolio/${targetImg}`;
       }
 
       function closeLightbox(){
@@ -36,7 +36,6 @@ const lightbox   = document.querySelector('.lightbox'),
 
           function listClick(e){
               let itemName = this.classList[1];
-              console.log(projDivs);
               projList.forEach(item => item.classList.remove('active'));
               document.querySelector('.' + itemName).classList.add('active');
           }
