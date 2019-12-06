@@ -64,7 +64,6 @@ const nav        = document.querySelector('.headNav'),
         //scroll to
         let x = '.sec'+this.id;
         let target = document.querySelector(x);
-        console.log(target);
 
         target.scrollIntoView({
             behavior: "smooth", 

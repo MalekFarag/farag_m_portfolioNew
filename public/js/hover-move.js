@@ -26,7 +26,6 @@ const 	element = document.querySelector('.landingInfo'),
   const arrow = document.querySelector('.arrow');
 
   window.onload = function() {
-      console.log(arrow);
       let tl = new TimelineMax({repeat: 999});
       tl.to(arrow, 1, {bottom: '10px'});
       tl.reverse();

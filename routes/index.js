@@ -11,7 +11,14 @@ router.get('/', function(req, res, next) {
     if (err){
       throw err; 
     }else{
-      
+
+      //spliting mockups
+      results.forEach(row =>{
+        console.log(row);
+        let split = row.Mockups.split(','); 
+        row.Mockups = split;
+      });
+
       //spliting apps used
       results.forEach(row =>{
         console.log(row);
@@ -22,8 +29,8 @@ router.get('/', function(req, res, next) {
       //splitting images
       results.forEach(row =>{
         console.log(row);
-        let imgs = row.Images.split(','); 
-        row.Images = imgs;
+        let split = row.Images.split(','); 
+        row.Images = split;
       });
 
         console.log(results);

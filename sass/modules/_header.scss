@@ -96,16 +96,16 @@
             z-index: 1;
             .navItem{
                 font-size: 40px;
-                margin: 100px 30%;
+                margin: 100px 22%;
                 padding: 8px;
                 transform: translateY(0px);
                 opacity: 0;
                 cursor: pointer;
                 color: white;
+                text-align: center;
 
                 &:hover{
                     background: white;
-                    background-clip: padding-box;
                     color: rgb(0, 0, 0);
                 }
             }
