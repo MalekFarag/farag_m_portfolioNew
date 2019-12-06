@@ -11,21 +11,25 @@ router.get('/', function(req, res, next) {
     if (err){
       throw err; 
     }else{
-      results[0].AppsUsed = results[0].AppsUsed.split(",").map(function(item) {
+      
+      //spliting apps used
+      results.forEach(row =>{
+        console.log(row);
+        let split = row.AppsUsed.split(','); 
+        row.AppsUsed = split;
+      });
 
-          return item;
-       });
-      console.log('Database results: ' + results[0].AppsUsed);
+      //splitting images
+      results.forEach(row =>{
+        console.log(row);
+        let imgs = row.Images.split(','); 
+        row.Images = imgs;
+      });
+
+        console.log(results);
     }
-
-    // splits up by removing ','
-        // results[0].Images.split(",").map(function(item) {
-        //   return item;
-        // });
-
-        
-    
           res.render('index', {
+            
           //portfolio peices:
             cordae: results[0],
             hack  : results[1],
