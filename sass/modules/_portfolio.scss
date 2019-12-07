@@ -1,14 +1,14 @@
 // portfolio sec
 .secPortfolio{
     background: $main-background-color;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     .portfolioNav{
         .projList{
             @include flex-center(row);
             justify-content: space-evenly;
             .pItem{
                 font-size: 18px;
-                border-bottom: solid 3px black;
+                border-bottom: solid 3px rgba(0,0,0,0);
                 padding: 7px;
                 margin: 6px;
                 cursor: pointer;
@@ -16,7 +16,7 @@
                 transition: all .18s ease;
                 &:hover{
                     color: white;
-                    background-color: black;
+                    background-color: rgba(0,0,0,.85);
                     border-bottom: solid 3px rgba(0,0,0,0);
                     box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.4);
 
@@ -25,7 +25,7 @@
             }
             .active{
                 color: white;
-                background-color: black;
+                background-color: rgba(0,0,0,.85);
                 border-bottom: solid 3px rgba(0,0,0,0);
                 box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.4);
 
@@ -78,9 +78,9 @@
                 flex-wrap: nowrap;
                 .app{
                     cursor: pointer;
-                    font-size: 12px;
+                    font-size: 11px;
                     color: white;
-                    background-color: black;
+                    background-color: rgba(0,0,0,.85);
                     padding: 6px 8px;
                     border-radius: 20px;
 

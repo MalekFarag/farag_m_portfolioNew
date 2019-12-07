@@ -7,6 +7,9 @@
     left: 0;
     background: rgba(0,0,0,.85);
     cursor: pointer;
+    opacity: 1;
+    pointer-events: all;
+    transition: all .15s ease-in-out;
 
     .close{
         color: white;
@@ -46,4 +49,9 @@
     &:hover{
         opacity: .8;
     }
+}
+
+.off{
+    opacity: 0;
+    pointer-events: none;
 }

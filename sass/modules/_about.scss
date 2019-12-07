@@ -5,6 +5,12 @@
     background: $main-background-color;
     .strengths{
         @include flex-center(column);
+
+        .fas{
+            font-size: 74px;
+            opacity: .85;
+            margin-bottom: 10px;
+        }
         
         .strength{
             width: 99%;

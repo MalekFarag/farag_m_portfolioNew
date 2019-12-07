@@ -13,6 +13,8 @@
     }
     form{
         @include flex-center(column);
+        max-width: 650px;
+        margin: 0 auto;
 
         input, textarea{
             width: 70%;
@@ -26,6 +28,9 @@
             padding: 12px;
 
             transition: all .3s ease;
+            &:focus{
+                border-bottom: solid 3px transparent
+            }
         }
 
         input::placeholder, textarea::placeholder{

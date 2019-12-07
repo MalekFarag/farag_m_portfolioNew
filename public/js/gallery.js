@@ -12,13 +12,13 @@ const lightbox   = document.querySelector('.lightbox'),
 
         console.log('Image src + alt' + targetImg + targetCaption);
         
-        lightbox.classList.remove('hidden');
+        lightbox.classList.remove('off');
         caption.textContent = targetCaption;
         lightImg.src = `images/portfolio/${targetImg}`;
       }
 
       function closeLightbox(){
-        lightbox.classList.add('hidden');
+        lightbox.classList.add('off');
         console.log('closed lightbox');
       }
 
