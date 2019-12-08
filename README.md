@@ -29,23 +29,21 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
 4. Change config file to run on local host. Remove old code and add code below.
 *Make sure to choose port number accordingly*
 
-`
-const config = {
+`const config = {`
 
-    host: 'localhost',
+    `host: 'localhost',`
     
-    port: 8889, // windows: 3306 // MAC: 8889 or 8888 // *Change accordingly
+    `port: 8889, // windows: 3306 // MAC: 8889 or 8888 // *Change accordingly`
     
-    uname: 'root',
+    `uname: 'root',`
     
-    pname: 'root', // windows: *leave blank* // MAC: root // *Change accordingly
+    `pname: 'root', // windows: *leave blank* // MAC: root // *Change accordingly`
     
-    db: 'db_malekf_site'
+    `db: 'db_malekf_site'`
     
- }
+ `}`
  
-module.exports = config;
-` 
+`module.exports = config;`
 
 5. Download + import database (utils>db_malekf_site) into localhost phpmyadmin.
 
