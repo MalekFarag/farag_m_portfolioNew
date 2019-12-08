@@ -29,7 +29,8 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
 4. Change config file to run on local host. Remove old code and add code below.
 *Make sure to choose port number accordingly*
 
-`const config = {
+`
+const config = {
 
     host: 'localhost',
     
@@ -43,9 +44,9 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
     
  }
  
-
-module.exports = config;` 
+module.exports = config;
+` 
 
 5. Download + import database (utils>db_malekf_site) into localhost phpmyadmin.
 
-6. Start application on localhost. `npm start`.
+6. Start application on localhost. `npm start`
