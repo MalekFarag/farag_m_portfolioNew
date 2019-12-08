@@ -16,7 +16,7 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
 
 
 
-#### Must install packages in order to launch from visual studio code
+##### Must install packages in order to launch from visual studio code
 To install packages:
 
 `npm install cookie-parser debug express gsap hbs http-errors morgan mysql waypoints`
