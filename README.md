@@ -20,3 +20,5 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
 To install packages:
 
 `npm install cookie-parser debug express gsap hbs http-errors morgan mysql waypoints`
+
+Change config file to run on local host!
