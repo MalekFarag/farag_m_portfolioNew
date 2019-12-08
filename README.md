@@ -2,7 +2,7 @@
 
 https://farag-m-portfolio.herokuapp.com/
 
-## Portfolio site showcasing Malek Farag's past work in web design, development and motion design.
+### Portfolio site showcasing Malek Farag's past work in web design, development and motion design.
 
 
 ### Built with 
