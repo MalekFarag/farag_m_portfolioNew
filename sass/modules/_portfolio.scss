@@ -39,10 +39,12 @@
         width: 97%;
         margin: 50px auto;
         .projInfo{
+            @include flex-center(column);
+            justify-content: space-evenly;
             position: absolute;
-            transform: scale(.95);
+            transform: scale(.95) translateY(10px);
             opacity: 0;
-            transition: all .6s ease;
+            transition: all .5s ease;
             width: 100%;
             margin-left: 30px;
             margin-right: 30px;
@@ -91,21 +93,43 @@
                 }
             }
             .projImages{
-                margin-top: 20px;
-                max-width: 1200px;
-                width: 45%;
+                margin-top: 30px;
+                max-width: 900px;
                 @include flex-center(row);
-                justify-content: space-evenly;
+                justify-content: space-evenly !important;
                 flex-wrap: wrap;
+                align-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .pImg{
+                width: auto;
+                height: 90px;
+                margin: 5px;
             }
         }
         
         .view{
-            @include flex-center(column);
-            justify-content: space-evenly;
             position: relative;
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1) translateY(0px);
+        }
+    }
+
+    .video{
+        width: 100%;
+
+        h2{
+            width: 95%;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        video{
+            width: 98%;
+            margin: 0 auto;
+            max-width: 600px;
         }
     }
 }
