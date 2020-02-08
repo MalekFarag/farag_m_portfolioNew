@@ -24,7 +24,7 @@ Photosop, Illustrator, Premiere Pro, After Effects, C4D
 
 3. Install packages:
 
-`npm install cookie-parser debug express gsap hbs http-errors morgan mysql waypoints nodemailer`
+`npm install cookie-parser debug express gsap hbs http-errors morgan mysql waypoints`
 
 4. Change config file to run on local host. Remove old code and add code below.
 *Make sure to choose port number accordingly*

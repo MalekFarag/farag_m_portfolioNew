@@ -1,6 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var auth = require('../config/mailcreds');
+var mailer = require('nodemailer');
+
+// nodemailer stuff
+const transporter = mailer.createTransport({
+	service: 'gmail',
+	auth: {
+		user: auth.user,
+		pass: auth.pass
+	}
+});
 
 
 const sql = require('../utils/sql');
@@ -45,22 +56,40 @@ router.get('/', function(req, res, next) {
           });
 })});
 
-/* GET submit page. */
-router.get('/submit', function(req, res, next) {
+
+
+
+
+
+
+
+// nodemailer post
+
+router.post('/submit', (req, res) => {
+	console.log('hit mail route');
+	console.log('body: ', req.body);
+
+	// get the mail options from the form -> the url params using bodyParser middleware
+
+	const mailOptions = {
+		from: req.body.usermail,
+		to: auth.user,
+		replyTo: req.body.usermail,
+		subject: `From Portfolio site: Subject = ${req.body.subject || 'none'}`, // Subject line
+		text: 'Sent by:' + req.body.company + '***********************************' + req.body.message
+	};
+
+	transporter.sendMail(mailOptions, function (err, info) {
+		if (err) {
+			console.log("failed... ", err);
+			res.json(err);
+		} else {
+			console.log("success! ", info);
+			res.json(info);
+		}
+  });
+  
   res.render('submit', {pageTitle: ' - Success!', layout: false});
-});
-
-/* GET portfolio data FROM database. */
-// router.get('/svgData/:target', (req,res)=>{
-//   let query = `SELECT * FROM stats WHERE id="${req.params.target}"`
-
-//   sql.query(query, (err, result)=>{
-//     if (err){console.log(err);}
-
-//     console.log(result);
-
-//     res.json(result[0]);
-//   })
-// })
+})
 
 module.exports = router;
