@@ -10,7 +10,7 @@ const 	element = document.querySelector('.landingInfo'),
             element.style.transform = "translateX(" + moveX  + '%) ' + "translateY(" + moveY + "%)";
 
             }else{
-                element.style.transform = "translateX(0) translateY(0)";
+                element.style.transform = "translateX(-50%) translateY(-50%)";
             }
     }
     parent.onmousemove = move;
@@ -18,7 +18,7 @@ const 	element = document.querySelector('.landingInfo'),
     var waypoint = new Waypoint({
     element: document.querySelector('.landingInfo'),
     handler: function(direction) {
-        element.style.transform = "translateX(0px) translateY(0px)";
+        element.style.transform = "translateX(-50%) translateY(-50%)";
     }
   })
 
