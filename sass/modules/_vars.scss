@@ -26,7 +26,7 @@ canvas{
 body{
     width: 100%; 
     font-family: 'Montserrat', sans-serif;
-    background: rgba($color: #000000, $alpha: 1);
+    background: linear-gradient(0deg, rgb(0, 3, 7) 0%, rgb(7, 5, 12) 100%);
     overflow-x: hidden;
 }
 
@@ -40,18 +40,9 @@ main{
 
 section{
     margin: 0 auto;
-    text-align: center;
     transform: translateY(-5px);
 }
 
-.divide-bottom{
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    transform: translateY(-40px);
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-}
 
 //mixins
 

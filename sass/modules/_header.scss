@@ -84,20 +84,25 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding-bottom: 250px;
+        height: 100vh;
 
-        background: linear-gradient(0deg, rgba(34,193,195,.2) 0%, rgb(176, 73, 97) 100%);
+        background: linear-gradient(0deg, rgba(20, 43, 44, 0.8) 0%, rgb(0, 0, 0) 100%);
         clip-path: circle(0px at 50% -10%);
         transition: all 1s ease;
 
         .navList{
             text-align: center;
             position: relative;
+            top: 100px;
             z-index: 1;
+            height: 100vh;
             .navItem{
-                font-size: 40px;
-                margin: 100px 22%;
-                padding: 8px;
+                font-size: 30px;
+                margin: 0 auto;
+                padding-top: 70px;
+                padding-bottom: 70px;
+                letter-spacing: 11px;
+                text-transform: uppercase;
                 transform: translateY(0px);
                 opacity: 0;
                 cursor: pointer;
@@ -130,7 +135,11 @@
         }        
     }
     .showNav{
-        clip-path: circle(100% at 50% -5%);
+        clip-path: circle(150% at 50% -5%);
         pointer-events: all;
     }
+}
+
+@media only screen and (min-width: 700px){
+
 }
