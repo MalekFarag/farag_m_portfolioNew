@@ -4,21 +4,21 @@ const 	element = document.querySelector('.landingInfo'),
 
 	function move(e){
         if (window.matchMedia("(min-width: 700px)").matches) {
-            var moveX = (e.pageX * -1 / 60 + 16);
-            var moveY = (e.pageY * -1 / 60 + 5);
+            var moveX = (e.pageX * -1 / 25 - 10);
+            var moveY = (e.pageY * -1 / 15);
 
-            parent.style.transform = "translateX(" + moveX  + '%) ' + "translateY(" + moveY + "%)";
+            element.style.transform = "translateX(" + moveX  + '%) ' + "translateY(" + moveY + "%)";
 
             }else{
-                parent.style.transform = "translateX(0) translateY(0)";
+                element.style.transform = "translateX(0) translateY(0)";
             }
     }
     parent.onmousemove = move;
 
     var waypoint = new Waypoint({
-    element: document.querySelector('.mainHeader'),
+    element: document.querySelector('.landingInfo'),
     handler: function(direction) {
-        parent.style.transform = "translateX(0px) translateY(0px)";
+        element.style.transform = "translateX(0px) translateY(0px)";
     }
   })
 
