@@ -1,6 +1,15 @@
 <main class="pageHome">
     <section class="secAbout">
         <h2 class="hidden">About</h2>
+        <div class="malekf">
+            <p class="thisIs">this is me</p>
+            <img class="portrait" src="images/me.jpg" alt="Portrait of Malek Farag">
+            <div class="aboutDesc">
+                <p class="title">design x development</p>
+                <div class="vertDiv"></div>
+                <p class="desc">designing and developing fast, reliable applications for real people</p>
+            </div>
+        </div>
         <div class="strengths">
             <h3 class="hidden">Strengths</h3>
             <div class="strength s1">
@@ -24,15 +33,8 @@
     </section>
 
     <section class="secPortfolio">
-        <h2 class="hidden">Portfolio</h2>
-        <nav class="portfolioNav">
-            <ul class="projList">
-                <li class="pItem li1 active">Cordae Album Site</li>
-                <li class="pItem li2">Hackathon Build</li>
-                <li class="pItem li3">Cliff Creatives</li>
-                <li class="pItem li4">MySQL + HBS Build</li>
-            </ul>
-        </nav>
+        {{!-- feature a project then send to different url for all projects --}}
+        <h2>Featured Project</h2>
 
         {{!-- use hbs each view here! --}}
         <div class="projView">
@@ -56,72 +58,12 @@
                         {{/each}}
                     </div>
             </div>
-
-            <div class="projInfo proj2">
-                <h3 class="projTitle">{{hack.Name}}</h3>
-                    <p class="projDesc">{{hack.Description}}</p>
-                    <div class="parMocks">
-                        {{#each hack.Mockups}}
-                            <img src="images/portfolio/{{this}}" alt="Hackathon site mockup" class="projMockups openBox">
-                        {{/each}}
-                    </div>
-                    <div class="appsUsed">
-                        {{#each hack.AppsUsed}}
-                            <label class="app">{{this}}</label>
-                        {{/each}}
-                    </div>
-                    <div class="projImages">
-                        {{#each hack.Images}}
-                            <img src="images/portfolio/{{this}}" class="pImg openBox" alt="hackathon site screenshot">
-                        {{/each}}
-                    </div>
-            </div>
-
-            <div class="projInfo proj3">
-                <h3 class="projTitle">{{cliff.Name}}</h3>
-                    <p class="projDesc">{{cliff.Description}}</p>
-                    <div class="parMocks">
-                        {{#each cliff.Mockups}}
-                            <img src="images/portfolio/{{this}}" alt="Cliff creatives site mockup" class="projMockups openBox">
-                        {{/each}}
-                    </div>
-                    <div class="appsUsed">
-                        {{#each cliff.AppsUsed}}
-                            <label class="app">{{this}}</label>
-                        {{/each}}
-                    </div>
-                    <div class="projImages">
-                        {{#each cliff.Images}}
-                            <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cliff creatives site screenshot">
-                        {{/each}}
-                    </div>
-            </div>
-
-            <div class="projInfo proj4">
-                <h3 class="projTitle">{{fav.Name}}</h3>
-                    <p class="projDesc">{{fav.Description}}</p>
-                    <div class="parMocks">
-                        {{#each fav.Mockups}}
-                            <img src="images/portfolio/{{this}}" alt="Favorite things site mockup" class="projMockups openBox">
-                        {{/each}}
-                    </div>
-                    <div class="appsUsed">
-                        {{#each fav.AppsUsed}}
-                            <label class="app">{{this}}</label>
-                        {{/each}}
-                    </div>
-                    <div class="projImages">
-                        {{#each fav.Images}}
-                    <img src="images/portfolio/{{this}}" class="pImg openBox" alt="favorite things site screenshot">
-                        {{/each}}
-                    </div>
-            </div>
         </div>
 
-        <div class="video">
+        {{!-- <div class="video">
             <h2>Malek Farag - Demo Reel</h2>
             <video src="video/demo.mp4" controls></video>
-        </div>
+        </div> --}}
     </section>
 </main>
 

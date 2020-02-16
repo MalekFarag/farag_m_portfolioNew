@@ -23,11 +23,11 @@
             }
         }
         .viewWork{
-            margin: 20px auto;
-            padding: 10px;
+            margin: 30px auto;
+            padding: 30px;
             font-size: 26px;
             width: 150px;
-            border: solid 2px white;
+            border-top: solid 3px white;
             border-radius: 1px;
             background: rgba(255,255,255,0);
             cursor: pointer;
@@ -38,7 +38,7 @@
 
             &:hover{
                 background: rgba(255,255,255,1);
-                color:  rgb(197, 56, 84);
+                color:  rgba(197, 56, 84,0);
             }
         }
     }
