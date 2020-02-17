@@ -1,17 +1,7 @@
 <main class="pageHome">
     <section class="secAbout">
-        <h2 class="hidden">About</h2>
-        <div class="malekf">
-            <p class="thisIs">this is me</p>
-            <img class="portrait" src="images/me.jpg" alt="Portrait of Malek Farag">
-            <div class="aboutDesc">
-                <p class="title">design x development</p>
-                <div class="vertDiv"></div>
-                <p class="desc">designing and developing fast, reliable applications for real people</p>
-            </div>
-        </div>
+        <h2>About Me</h2>
         <div class="strengths">
-            <h3 class="hidden">Strengths</h3>
             <div class="strength s1">
                 <i class="fas fa-bolt"></i>
                 <h4>Speed</h4>
@@ -26,10 +16,23 @@
 
             <div class="strength s3">
                 <i class="fas fa-globe-europe"></i>
-                <h4>Creativity</h4>
-                <p>As creative as they get</p>
+                <h4>Versitile</h4>
+                <p>Adaptable to different languages and plugins so team work is a breeze</p>
             </div>
         </div>
+
+        <div class="vertDiv"></div>
+
+        <div class="malekf">
+            <p class="thisIs">this is me</p>
+            <img class="portrait" src="images/me.jpg" alt="Portrait of Malek Farag">
+            <div class="aboutDesc">
+                <p class="title">Malek Farag</p>
+                <p class="desc">Passionate developer and designer from London, Ontario. Creating fast, reliable applications for real people.</p>
+            </div>
+        </div>
+
+        
     </section>
 
     <section class="secPortfolio">
@@ -52,11 +55,7 @@
                             <label class="app">{{this}}</label>
                         {{/each}}
                     </div>
-                    <div class="projImages">
-                        {{#each cordae.Images}}
-                    <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cordae album review site screenshot">
-                        {{/each}}
-                    </div>
+                    <a class="more" href="port{{cordae.Name}}">More Info</a>
             </div>
         </div>
 

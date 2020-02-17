@@ -5,7 +5,7 @@
     $para-sizeM: 18px;
 
     $background-color: linear-gradient(0deg, rgb(34,193,195) 5%, rgb(228, 29, 62) 95%);
-    $main-background-color: white;
+    $main-background-color: rgba(255, 255, 255, 0.995);
 
 
 
@@ -14,6 +14,7 @@
 .hidden{
     display: none !important;
 }
+
 
 canvas{
     position: absolute;
@@ -36,12 +37,15 @@ main{
     position: relative;
     z-index: 0;
     width: 100%;
+    overflow-x: hidden;
 }
 
 section{
     margin: 0 auto;
     transform: translateY(-5px);
+    overflow-x: hidden;
 }
+
 
 
 //mixins

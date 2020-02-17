@@ -16,7 +16,9 @@ const nav        = document.querySelector('.headNav'),
         burgerIcon.classList.toggle('moveB');
 
         logo.querySelector('.st0').classList.toggle('white');
-		logo.querySelector('.st1').classList.toggle('white');
+        logo.querySelector('.st1').classList.toggle('white');
+        
+        
 
 
         line1.classList.toggle('colorChange');
