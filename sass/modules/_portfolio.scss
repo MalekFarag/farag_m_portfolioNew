@@ -1,7 +1,6 @@
 // portfolio sec
 .secPortfolio{
     background: $main-background-color;
-    padding-bottom: 30px;
 
     h2{
         font-size: 24px;
@@ -48,8 +47,10 @@
             box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
             justify-content: space-evenly;
             text-align: center;
-            margin: 0 30px;
+            margin: 0 auto;
             padding: 30px;
+            width: 90%;
+            max-width: 700px;
             .projTitle{
                 font-size: 24px;
             }
@@ -145,10 +146,69 @@
             max-width: 600px;
         }
     }
+
+    .allP{
+        padding-bottom: 20px;
+    }
+
+    .allProjs{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        margin: 50px auto;
+        
+
+        .proj{
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            max-width: 35%;
+            padding: 15px 20px;
+            text-align: center;
+
+            background-color: white;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            }
+
+            .projTitle{
+                font-size: 24px;
+            }
+
+            .projMock{
+                margin-top: 20px;
+                width: 100%;
+            }
+            .more{
+                color: rgba(0, 0, 0, 0.9);
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 25%;
+                padding-top: 20px;
+                border-top: solid 3px rgba(0, 0, 0, 0.9);
+                text-decoration: none;
+                font-weight: bolder;
+                transition: all .2s ease;
+                &:hover{
+                    box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.9);
+                }
+            }
+            
+
+        }
+    }
 }
 
 @media only screen and (min-width: 700px){
     .secPortfolio{
+        h2{
+            font-size: 30px;
+        }
         .projInfo{
             .parMocks{
                 max-width: 1000px;
@@ -159,6 +219,18 @@
                     display: block;
                     order: -1;
                 }
+            }
+        }
+
+        .allProjsWrap{
+            background-color: whitesmoke;
+            padding: 75px 0;
+        }
+        .allProjs{
+            max-width: 1200px;
+            .proj{
+                max-width: 27%;
+                margin: 10px auto;
             }
         }
     }
