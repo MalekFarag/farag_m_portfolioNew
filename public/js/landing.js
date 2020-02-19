@@ -7,8 +7,8 @@ function init() {
   scene = new THREE.Scene();
 
   camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);
-  camera.position.z = 1;
-  camera.rotation.x = Math.PI/2;
+  camera.position.z = 0;
+  camera.rotation.x = Math.PI/5;
 
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -26,10 +26,10 @@ function init() {
     starGeo.vertices.push(star);
   }
 
-  let sprite = new THREE.TextureLoader().load( 'images/star.png' );
+  let sprite = new THREE.TextureLoader().load( 'images/star2.png' );
   let starMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
-    size: 0.7,
+    size: 0.4,
     map: sprite
   });
 
