@@ -9,7 +9,7 @@
     $phone = '';
     $subject = '';
     $message = '';
-    $recipient = 'faragmalek14@gmail.com';
+    $recipient = 'company@gmail.com';
 
     //validation
     if(isset($_POST['name'])){
